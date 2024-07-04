@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="save_for_later.html">Save for Later</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feel free to reach out.</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="newsletter">Subscribe to our newsletter:</label><br>
+            <input type="radio" id="weekly" name="newsletter" value="weekly">
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="monthly" name="newsletter" value="monthly">
+            <label for="monthly">Monthly</label><br>
+            <button type="submit">Submit</button>
+        </form>
+        <img src="images/image5.jpg" alt="Sample Image 5">
+        <ul>
+            <li><a href="https://www.bbc.com" target="_blank">External Link to BBC</a></li>
+            <li><a href="mailto:bekaardt21@gmail.com">Email Us</a></li>
+        </ul>
+        <h3>World's Culinary Treasures: A Delicious Global Tour!</h3>
+        <table id="example" class="display">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Ingredients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sushi (Japan)</td>
+                    <td>Rice, Nori, Raw Fish, Soy Sauce, Wasabi</td>
+                </tr>
+                <tr>
+                    <td>Tacos (Mexico)</td>
+                    <td>Tortillas, Beef, Lettuce, Cheese, Salsa</td>
+                </tr>
+                <tr>
+                    <td>Paella (Spain)</td>
+                    <td>Rice, Saffron, Chicken, Seafood, Peas</td>
+                </tr>
+                <tr>
+                    <td>Pasta Carbonara (Italy)</td>
+                    <td>Pasta, Eggs, Parmesan, Pancetta, Black Pepper</td>
+                </tr>
+                <tr>
+                    <td>Tom Yum (Thailand)</td>
+                    <td>Shrimp, Lemongrass, Lime Leaves, Fish Sauce, Chili</td>
+                </tr>
+                <tr>
+                    <td>Poutine (Canada)</td>
+                    <td>French Fries, Cheese Curds, Gravy</td>
+                </tr>
+                <tr>
+                    <td>Kimchi (Korea)</td>
+                    <td>Napa Cabbage, Radish, Garlic, Chili Powder, Fish Sauce</td>
+                </tr>
+                <tr>
+                    <td>Beef Stroganoff (Russia)</td>
+                    <td>Beef, Mushrooms, Onion, Sour Cream, Mustard</td>
+                </tr>
+                <tr>
+                    <td>Falafel (Middle East)</td>
+                    <td>Chickpeas, Garlic, Onion, Cumin, Coriander</td>
+                </tr>
+                <tr>
+                    <td>Bibimbap (Korea)</td>
+                    <td>Rice, Beef, Vegetables, Gochujang, Egg</td>
+                </tr>
+                <tr>
+                    <td>Feijoada (Brazil)</td>
+                    <td>Black Beans, Pork, Sausage, Rice, Kale</td>
+                </tr>
+                <tr>
+                    <td>Coq au Vin (France)</td>
+                    <td>Chicken, Red Wine, Mushrooms, Bacon, Onions</td>
+                </tr>
+                <tr>
+                    <td>Butter Chicken (India)</td>
+                    <td>Chicken, Tomato, Butter, Cream, Spices</td>
+                </tr>
+                <tr>
+                    <td>Bangers and Mash (UK)</td>
+                    <td>Sausages, Potatoes, Onion Gravy</td>
+                </tr>
+                <tr>
+                    <td>Churrasco (Argentina)</td>
+                    <td>Beef, Chimichurri Sauce, Bread</td>
+                </tr>
+                <tr>
+                    <td>Moussaka (Greece)</td>
+                    <td>Eggplant, Ground Beef, Tomato, Béchamel Sauce, Cheese</td>
+                </tr>
+                <tr>
+                    <td>Pad Thai (Thailand)</td>
+                    <td>Rice Noodles, Shrimp, Tofu, Eggs, Peanuts</td>
+                </tr>
+                <tr>
+                    <td>Hummus (Middle East)</td>
+                    <td>Chickpeas, Tahini, Lemon, Garlic, Olive Oil</td>
+                </tr>
+                <tr>
+                    <td>Jollof Rice (West Africa)</td>
+                    <td>Rice, Tomatoes, Onion, Bell Pepper, Spices</td>
+                </tr>
+                <tr>
+                    <td>Ratatouille (France)</td>
+                    <td>Eggplant, Zucchini, Tomato, Onion, Bell Pepper</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+
+            loadSavedItems();
+
+            // Handle comment form submission
+            $('#comment-form').on('submit', function(e) {
+                e.preventDefault();
+                alert('Comment submitted: ' + $('#comment').val());
+            });
+
+            // Function to show/hide nav on header click
+            $('header').click(function() {
+                $('nav ul').toggle();
+            });
+
+            // Show nav links when cursor moves in and hide when cursor moves out
+            $('nav').hover(function() {
+                $(this).find('ul').stop(true, true).slideDown(300);
+            }, function() {
+                $(this).find('ul').stop(true, true).slideUp(300);
+            });
+
+            // Save for later functionality
+            $('.save-for-later').click(function() {
+                const item = $(this).data('item');
+                let savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+                savedItems.push(item);
+                localStorage.setItem('savedItems', JSON.stringify(savedItems));
+                alert('Item saved! You have ' + savedItems.length + ' items saved.');
+            });
+
+            // Handle like form submission
+            $('.like-form').on('submit', function(e) {
+                e.preventDefault();
+                alert('You liked this item!');
+            });
+    </script>
+</body>
+</html>
+
+
+
+

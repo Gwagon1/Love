@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save for Later</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        nav ul {
+            display: none;
+        }
+        nav ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Save for Later</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="save_for_later.html">Save for Later</a></li>
+        </ul>
+    </nav>
+    
+    <section id="saved-items">
+        <h2>Your Saved Items</h2>
+        <ul id="saved-list">
+            <!-- Saved items will be appended here -->
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Gryphon Illes Bekaardt</p>
+    </footer>
+    
+    
+</body>
+</html>

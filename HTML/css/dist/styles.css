@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: #2ecc71;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #25a25a;
+}
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p, section ul, section img, section blockquote {
+  margin-bottom: 1rem;
+}
+
+.block:nth-child(odd) {
+  font-family: "Arial", sans-serif;
+}
+
+.block:nth-child(even) {
+  font-family: "Times New Roman", serif;
+}
+
+footer {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.save-for-later {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.save-for-later:hover {
+  background-color: #217dbb;
+}
+
+.like-form button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.like-form button:hover {
+  background-color: #25a25a;
+}
+
+/*# sourceMappingURL=styles.css.map */
